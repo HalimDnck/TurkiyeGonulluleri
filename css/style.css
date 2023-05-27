@@ -1,0 +1,158 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap");
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-size: 16px;
+  font-family: "Roboto", sans-serif;
+  background: #ffffff;
+  color: black;
+  width: 100vw;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+header {
+  width: 100vw;
+  height: 10vh;
+  background: #ed1a3b;
+  color: #EEEEEE;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+header img {
+  width: 50px;
+}
+header h1 {
+  font-size: 20px;
+}
+
+main {
+  height: 90%;
+  margin-top: 50px;
+  gap: 50px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+main .sum-section {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+}
+main .sum-section .reset-button {
+  width: 75px;
+  height: 30px;
+  border-radius: 12px;
+  border: none;
+  font-weight: bold;
+}
+main .top-section {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 20px;
+}
+main .top-section img {
+  width: 100px;
+  height: 100px;
+  -o-object-fit: cover;
+     object-fit: cover;
+  -o-object-position: top;
+     object-position: top;
+  border-radius: 50%;
+}
+main .top-section div {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  gap: 10px;
+}
+main .top-section div .aday {
+  font-style: italic;
+  font-weight: bold;
+}
+main .top-section .vertical-hr {
+  border: none;
+  border-left: 1px solid #979297;
+  height: 20vh;
+  width: 1px;
+}
+main .top-section .top-a {
+  width: 50%;
+}
+main .top-section .top-b {
+  width: 50%;
+}
+main .top-section .aday {
+  text-align: center;
+}
+main .bottom-section {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 20px;
+}
+main .bottom-section .invalid-text {
+  display: flex;
+  gap: 5px;
+}
+main .bottom-section .invalid-buttons {
+  display: flex;
+  gap: 20px;
+}
+main .bottom-section .invalid-buttons button {
+  background: none;
+  width: 75px;
+  height: 35px;
+}
+
+footer {
+  width: 80%;
+  margin-top: 35px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+footer .vote-side {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+footer .vote-side .add-btn {
+  width: 100px;
+  height: 35px;
+  color: green;
+  background: none;
+  border: 2px solid green;
+  font-weight: 400;
+  font-size: 16px;
+  margin-top: 20px;
+  margin-bottom: 10px;
+}
+footer .vote-side .remove-btn {
+  width: 75px;
+  height: 35px;
+  color: red;
+  background: none;
+  border: 2px solid red;
+  font-weight: 400;
+  font-size: 16px;
+}
+footer .vote-side p {
+  font-weight: bold;
+  font-style: italic;
+  text-align: center;
+}/*# sourceMappingURL=style.css.map */

@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="shortcut icon" href="images/logo.png" type="image/x-icon">
+  <link rel="stylesheet" href="css/style.css">
+  <title>Türkiye Gönüllüleri</title>
+</head>
+<body>
+  <header>
+    <img src="images/logo.png" alt="TR Gönüllüleri">
+    <h1>Türkiye Gönüllüleri</h1>
+  </header>
+
+  <main>
+    <div class="sum-section">
+      <div class="sum">
+        <p>Toplam Oy: <a id="sum-vote">0</a></p>
+      </div>
+      <button class="reset-button" onclick="reset()">Sıfırla</button>
+    </div>
+    <div class="top-section">
+      <div class="top-a">
+        <p class="aday">Kemal <br> Kılıçdaroğlu</p>
+        <img src="images/kemal_kilicdaroglu.jpg" alt="K.Kılıçdaroğlu">
+        <p>Aldığı Oy</p>
+        <a id="kemal-click">0</a>
+        
+      </div>
+      <hr class="vertical-hr">
+      <div class="top-b">
+        <p class="aday">Recep Tayyip <br> Erdoğan</p>
+        <img src="images/recep_erdogan.jpg" alt="R.T.Erdoğan">
+        <p>Aldığı Oy</p>
+        <a id="rte-click">0</a>
+        
+      </div>
+    </div>
+    <div class="bottom-section">
+      <div class="invalid-text">
+        <p>Geçersiz Oy:</p>
+        <a id="invalid-click">0</a>
+      </div>
+      <div class="invalid-buttons">
+        <button class="add-invalid" onclick="invClick()">+ Geçersiz</button>
+        <button class="remove-invalid" onclick="invNegClick()">- Geçersiz</button>
+      </div>
+    </div>
+  </main>
+
+  <footer>
+
+    <div class="vote-side">
+      <p class="aday">Kemal <br> Kılıçdaroğlu</p>
+      <button class="add-kemal add-btn" onclick="kemalClick()">+ Oy</button>
+      <button class="remove-kemal remove-btn" onclick="kemalNegClick()">- Oy</button>
+    </div>
+
+    <div class="vote-side">
+      <p class="aday">Recep Tayyip <br> Erdoğan</p>
+      <button class="add-rte add-btn" onclick="rteClick()">+ Oy</button>
+      <button class="remove-rte remove-btn" onclick="rteNegClick()">- Oy</button>
+    </div>
+
+
+  </footer>
+  
+  <script src="script.js"></script>
+</body>
+</html>
